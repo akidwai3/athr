@@ -10,16 +10,35 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url('./docs/assets/Myproject.jpg');
+  background-image: url("/Users/ambreenkidwai/Documents/Myproject.jpg");
 
-  /* Full height */
   height: 100%; 
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60%;
+  
+  
 }
+
+@media only screen and (min-width: 600px) {
+  .bg{
+    background-size: 60%;
+   
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .bg{
+    background-size: 100%;
+    width: 60%;
+    background-position: center;
+    margin:0 auto;
+  }
+}
+
+
 </style>
 </head>
 <body>
